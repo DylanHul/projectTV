@@ -1,7 +1,11 @@
 var express = require('express');
 var router = express.Router();
-var tvmaze = require('tv-maze')
-var client = tvmaze.createClient()
+var tvmaze = require('tvmaze-api')
+
+
+var toCall = tvmaze.getByQuery('suits', true, [], function(result){
+    return result
+});
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
