@@ -9,10 +9,11 @@ router.get('/', function(req, res, next) {
 })
 
 tvmaze.getByQuery('suits', true, ['nextepisode'], function(result){
-        return JSON.stringify(result.schedule)
+        console.log(result.schedule)
       })
 
+
 function tvSearch () {
-     return tvmaze
+      return "heyyy"
 }
 module.exports = router;
