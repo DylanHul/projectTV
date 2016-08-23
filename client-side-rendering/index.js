@@ -6,11 +6,11 @@ import List from './modules/List'
 import Search from './modules/Search'
 import Repo from './modules/Repo'
 import Home from './modules/Home'
-
-
-const url = new URL('http://api.tvmaze.com/singlesearch/shows?q=girls&embed=episodes')
-
-console.log(url)
+// const tvmaze = require('tvmaze-api')
+//
+// tvmaze.getByQuery("suits", true, ['nextepisode'], function(result){
+//      console.log(result)
+//  })
 
 // $.get('http://api.tvmaze.com/schedule?country=US', function(data) {
 //     $.each(data, function(i, episode) {
@@ -36,6 +36,7 @@ console.log(url)
 //  console.log(xhr.status)
 //  console.log(xhr.statusText)
 // console.log("here is the URL: ", url);
+
 
 
 render((
