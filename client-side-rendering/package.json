@@ -17,6 +17,7 @@
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
     "react-router": "^2.0.0",
+    "tv-maze": "^1.1.0",
     "tvmaze-api": "^0.3.0"
   },
   "devDependencies": {

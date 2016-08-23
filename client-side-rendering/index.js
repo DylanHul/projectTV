@@ -6,13 +6,37 @@ import List from './modules/List'
 import Search from './modules/Search'
 import Repo from './modules/Repo'
 import Home from './modules/Home'
-// var tvmaze = require("tvmaze-api")
 
 
+const url = new URL('http://api.tvmaze.com/singlesearch/shows?q=girls&embed=episodes')
 
-// tvmaze.getByQuery('girls', true, [], function(result){
-//     console.log(result);
+console.log(url)
+
+// $.get('http://api.tvmaze.com/schedule?country=US', function(data) {
+//     $.each(data, function(i, episode) {
+//         var $html = $('#episode-template').clone();
+//
+//         $('.episode', $html).html(episode.name);
+//         $('.episode', $html).attr('href', episode.url);
+//
+//         $('.show', $html).html(episode.show.name);
+//         $('.show', $html).attr('href', episode.show.url);
+//
+//         $('.se', $html).html(episode.season + 'x' + episode.number)
+//
+//         $('#tvm-schedule').append('<li>' + $html.html() + '</li>');
+//     });
 // });
+
+ // http://api.tvmaze.com/singlesearch/shows?q=mr-robot&embed=nextepisode
+//  var xhr = new XMLHttpRequest();
+//  xhr.open("GET", "https://www.codecademy.com/", false);
+//
+//  xhr.send()
+//  console.log(xhr.status)
+//  console.log(xhr.statusText)
+// console.log("here is the URL: ", url);
+
 
 render((
   <Router history={browserHistory}>
