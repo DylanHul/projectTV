@@ -13,7 +13,7 @@ var tvmaze = require('tvmaze-api')
 router.get('/', function(req, res, next) {
   tvmaze.getByQuery(showSearch(), true, ['nextepisode'], function(result){
       res.send(result.schedule)
-      console.log(result)
+      console.log(JSON.stringify(result.schedule))
   })
 });
 

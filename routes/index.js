@@ -8,12 +8,11 @@ router.get('/', function(req, res, next) {
   res.render('index', {body: tvSearch} )
 })
 
-function tvSearch () {
-      tvmaze.getByQuery('suits', true, ['nextepisode'], function(result){
-        console.log(JSON.stringify(result.schedule))
+tvmaze.getByQuery('suits', true, ['nextepisode'], function(result){
+        return JSON.stringify(result.schedule)
       })
+
+function tvSearch () {
+     return tvmaze
 }
-
-
-
 module.exports = router;
