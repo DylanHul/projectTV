@@ -5,11 +5,23 @@
 </head>
 
 <body>
-  {{login}}
-  <form>
+  <form id="frm1" action="form_action.asp">
+  Search A Show:<br>
+  <input type="text" name="search" placeholder="search shows"><br>
+  <input id"btn" type="button" onclick="showSearch()" value="Submit">
+</form>
+<script>
+function showSearch() {
+       alert("f1 called")
+   }
+   window.onload = function() {
+       document.getElementById("btn").onclick = function fun() {
+           alert("hello")
+           showSearch()
+       }
+   }
+</script>
 
-
-  </form>
-
+{{search}}
 </body>
 </html>

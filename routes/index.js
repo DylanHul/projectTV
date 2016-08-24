@@ -3,17 +3,19 @@ var router = express.Router();
 var tvmaze = require('tvmaze-api')
 
 /* GET home page. */
-
 router.get('/', function(req, res, next) {
-  res.render('index', {body: tvSearch} )
+  var tvSearch
+   tvmaze.getByQuery('suits', true, ['nextepisode'], function(result){
+            tvSearch = result.schedule.days
+                  console.log("here", tvSearch)
+                  res.render('index', {body: tvSearch} )
+        })
+
 })
 
-tvmaze.getByQuery('suits', true, ['nextepisode'], function(result){
-        console.log(result.schedule)
-      })
 
 
-function tvSearch () {
-      return "heyyy"
-}
+// function tvSearch () {
+//       return search
+// }
 module.exports = router;
