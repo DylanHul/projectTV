@@ -19,7 +19,7 @@ router.get('/', function(req, res, next) {
   //    }
 
   newVar = function() { return "newplaceholder" }
-        res.render('login', {search: newVar} )
+        res.render('login', {showSearch: newVar} )
 
 
 });
