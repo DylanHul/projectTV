@@ -2,24 +2,22 @@
 <head>
   <title>My Project</title>
   <link rel="stylesheet" href="/stylesheets/style.css">
+  <!-- <script src='main.js' /> -->
+
 </head>
 
 <body>
-  <form id="frm1" action="form_action.asp">
+  <form id="form1" action="form_action.asp">
   Search A Show:<br>
-  <input type="text" name="search" placeholder="search shows"><br>
-  <input id"btn" type="button" onclick="showSearch" value="Submit">
+   <input id='input1'type="search" /> <button id='btn' onclick="onClick()">Search</button>
 </form>
+
+
 <script>
-{{showSearch}}
-// function showSearch() {
-//        alert("f1 called")
-//    }
-//    window.onload = function() {
-//        document.getElementById("btn").onclick = function fun() {
-//            alert("hello")
-//            showSearch()
-//        }
+// {{onClick}}
+// document.getElementById('btn').onclick = function onClick() {
+//        alert("onClick called")
+//        return true
 //    }
 </script>
 

@@ -1,27 +1,28 @@
 const express = require('express');
 const router = express.Router();
 const tvmaze = require('tvmaze-api')
+var loginhbs = require('../views/login.hbs')
 
-// var holyShit =
 
 
 
 router.get('/', function(req, res, next) {
 
-  // var codeThis = function showSearch() {
-  //        alert("f1 called")
-  //    }
-  //    document.onClick = function() {
-  //        document.getElementById("btn").onclick = function fun() {
-  //            alert("hello")
-  //            showSearch()
-  //        }
-  //    }
+  // var input = document.getElementById('btn')
+  //
+  // document.getElementById('btn').addEventListener('click', function () {
+  //   input.summit
+  // })
 
-  newVar = function() { return "newplaceholder" }
-        res.render('login', {showSearch: newVar} )
+// loginhbs = document.getElementById('btn').onclick = function onClick() {
+//          alert("onClick called")
+//          return true
+//      }
 
+myVar = "hi"
 
+res.render('login', {search: myVar} )
+//
 });
 
 
@@ -34,5 +35,12 @@ router.get('/', function(req, res, next) {
 //   alert("btn function fired")
 // })
 
+
+//   function clicking () { alert("newplaceholder") }
+  // var searchInput = document.getElementsById('btn').innerHTML
+//   // .onclick = newVar
+// var clickFun = function click () {
+//   alert('clicked btn')
+// }
 
 module.exports = router;
