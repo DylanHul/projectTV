@@ -1,16 +1,18 @@
+document.addEventListener('DOMContentLoaded', start)
 
+function start () {
+    one()
+}
 
+function one () {
+  var one = document.getElementById('form1')
+  one.addEventListener('click', searchSubmit)
+}
 
+function searchSubmit (evt) {
+  evt.target.style.backgroundColor = 'blue'
+}
 
-
-
-
-
-// document.addEventListener('DOMContentLoaded', start)
-// //
-// //
-// //
-// //
 // function clickHandler () {
 //
 //   clickHandler.addEventListener('click', function() {
