@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const tvmaze = require('tvmaze-api')
-var loginhbs = require('../views/login.hbs')
+
 
 
 

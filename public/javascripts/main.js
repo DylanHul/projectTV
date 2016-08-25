@@ -1,4 +1,3 @@
-var loginSearch = require('')
 
 
 
@@ -6,7 +5,18 @@ var loginSearch = require('')
 
 
 
-var link = document.getElementById('btn').onclick = function onClick() {
-       alert("onClick called")
-       return true
-   }
+
+// document.addEventListener('DOMContentLoaded', start)
+// //
+// //
+// //
+// //
+// function clickHandler () {
+//
+//   clickHandler.addEventListener('click', function() {
+//     document.getElementById('btn').onclick = function onClick() {
+//            alert("onClick called")
+//            return true
+//        }
+//   })
+// }
